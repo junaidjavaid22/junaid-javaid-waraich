@@ -1,0 +1,47 @@
+<!--@subject TEST TRANNING EMAIL TASK @-->
+<!--@vars
+{"store url="http://127.0.0.1/sample/pub/",
+"skin url=\"http://127.0.0.1/sample/pub/images/logo_email.gif\" _area='frontend'":"Email Logo Image"}
+@-->
+<!--@styles
+body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+@-->
+{{template config_path="design/email/header_template"}}
+<table>
+    <tr>
+        <td style="padding:20px 0 20px 0">
+            <table style="border:1px solid #E0E0E0;">
+                <tr>
+                    <td>
+                        <h1 style="font-size:22px;font-weight:normal;line-height:22px;margin:0 0 11px 0;">{{trans
+                        "RLTSquare Tranning"}},</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td colspan="2"
+                                    style="font-size:12px;padding:7px 9px 9px 9px;border:1px solid #EAEAEA;">
+                                    {{trans
+                                "hye Branko !"}}
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#EAEAEA;text-align:center;">
+                        <p style="font-size:12px;margin:0;">
+                            <strong>{{trans
+                            "Thank you"}}</strong>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+{{template config_path="design/email/footer_template"}}
